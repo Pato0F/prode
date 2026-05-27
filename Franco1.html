@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Pagina de Franco </title>
+</head>
+<body> Pagims de prueba - Parte del Body </body>
+</html>
+
+<script> console.log("JavaScript está corriendo") </script>
+
+<h1 id="titulo">Prode Mundial 2026</h1> <!--poner en negrita tiene una ID o Identificador llamado Titulo-->
+
+ <input id="inputEquipo" placeholder="Escribí un equipo..." /> <!--Imput para ingresar texto tiene un ID o Identificador llmado Inmput Equipo-->
+
+
+  <button onclick="mostrar()">Mostrar</button> <!--Boton para hacer Cilck-->  <!--Cuando el usuario hace Click en el boton Javascript llama a la funcion Mostrar con el comando oneclick--> 
+
+
+  <p id="resultado"></p> <!--Parrrafo tiene el ID o Identificador llamado Resultado-->
+
+
+  <script> function mostrar() { /// Entramos dentro de una funcion con nombre Mostrar
+// declaramos una variable llamada equipo a la izquierda del signo igual
+// y le asignamos el valor que encuentre el ID imputEquipo
+// Usamos para hacerlo el coamndo getElementById que significa en ingles obtener elemento por su ID
+// Cuando encuentre el valor le saca cuanto vale con la propiedad value
+     let equipo = document.getElementById("inputEquipo").value; // declaramos una variable llamada equipo
+
+// va a buscar el tag con el id resultado y le va a asignar a su propiedad innerText la palabra Equipo y le va a concatenar
+//  (sumar o agregar) el valor de la variable equipo que la obtuvo en la linea anterior.
+    document.getElementById("resultado").innerText = "Equipo: " + equipo 
+    } </script>
